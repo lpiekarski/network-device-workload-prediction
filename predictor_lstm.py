@@ -169,7 +169,7 @@ def r_squared_loss(y, y_pred):
 def create_model():
     model = tf.keras.Sequential([
         tf.keras.layers.Masking(mask_value=NANVAL),
-        tf.keras.layers.LSTM(64),
+        tf.keras.layers.LSTM(84),
         tf.keras.layers.Dense(1)
     ])
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
